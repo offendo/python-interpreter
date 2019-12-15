@@ -2,6 +2,10 @@
 Interpreter for Pleasant, written in Python
 ===========================================
 
+Pleasant is a toy language designed for use in a Programming Languages class. The intended project was to write a lexer and parser for the language, and use the provided C-runtime to execute code.
+
+I misunderstood the instructions and ended up writing a full interpreter for the language. On the bright side, I learned an immense amount about how interpreters work. 
+
 To run the interpreter, use:
 
     $ ./interpreter <source_file.main> 
