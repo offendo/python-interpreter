@@ -1,0 +1,29 @@
+#!/usr/bin/python3
+import sys
+import parser
+import os
+import glob
+from importlib import reload
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print('Usage: interpreter <inputfile>')
+    else:
+        fname = sys.argv[-1]
+        if fname == "TEST":
+            for fname in glob.glob('./tests/*.main'):
+                if fname == './tests/scope_test.main':
+                    continue
+                print(f'Testing {fname}:')
+                print(f'================')
+                reload(parser)
+                try:
+                    parser.parse(fname)
+                except FileNotFoundError:
+                    print(f'File {fname} not found. Please input a valid file.')
+                print('\n\n')
+        else:
+            try:
+                parser.parse(fname)
+            except FileNotFoundError:
+                print(f'File {fname} not found. Please input a valid file.')

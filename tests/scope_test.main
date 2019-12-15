@@ -1,0 +1,23 @@
+
+main
+
+declarations
+{
+}
+
+program
+{
+  var count = 0;
+  var canread = "you can read this\n";
+  if( integer.equal(count,0) )
+  {
+    var cantread = "you can't read this\n";
+  }
+  linux.write(1, canread, string.length(canread));
+  linux.write(1, cantread, string.length(cantread));
+
+}
+
+functions
+{
+}

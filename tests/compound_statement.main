@@ -1,0 +1,40 @@
+
+main
+
+declarations
+{
+}
+
+program
+{
+  if(integer.equal(1,1))
+  {
+    linux.write(1,"Passed\n",7);
+  }
+  else
+  {
+    linux.write(1,"Failed\n",7);
+  }
+
+  if(integer.equal(1,0))
+  {
+    linux.write(1,"Failed\n",7);
+  }
+  else
+  {
+    linux.write(1,"Passed\n",7);
+  }
+
+  if(integer.equal(77,-76))
+  {
+    linux.write(1,"Failed\n",7);
+  }
+  else
+  {
+    linux.write(1,"Passed\n",7);
+  }
+}
+
+functions
+{
+}

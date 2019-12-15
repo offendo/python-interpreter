@@ -1,0 +1,47 @@
+
+main
+
+declarations
+{
+}
+
+program
+{
+  var x = 1;
+  var y = 2;
+  var z = 12;
+
+  var a = integer.add(x,y);
+  var b = integer.multiply(integer.multiply(x,z),z);
+
+  var k = 0;
+
+  k = integer.sqrt(b);
+
+
+  var s0 = "x = ";
+  var s1 = ", y = ";
+  var s2 = ", z = ";
+  var s3 = ", a = ";
+  var s4 = ", b = ";
+  var s5 = ", k = ";
+  var sf = "\n";
+  linux.write(1,s0,string.length(s0));
+  linux.write(1,x,string.length(x));
+  linux.write(1,s1,string.length(s1));
+  linux.write(1,y,string.length(y));
+  linux.write(1,s2,string.length(s2));
+  linux.write(1,z,string.length(z));
+  linux.write(1,s3,string.length(s3));
+  linux.write(1,a,string.length(a));
+  linux.write(1,s4,string.length(s4));
+  linux.write(1,b,string.length(b));
+  linux.write(1,s5,string.length(s5));
+  linux.write(1,k,string.length(k));
+  linux.write(1,sf,string.length(sf));
+  
+}
+
+functions
+{
+}

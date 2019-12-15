@@ -1,0 +1,18 @@
+
+main
+
+declarations
+{
+}
+
+program
+{
+  var output = "Hello, greetings, saluations world! (Yippee!)\n";
+  var length = string.length(output);
+  linux.write(1,output,length);
+#  linux.exit(0);
+}
+
+functions
+{
+}

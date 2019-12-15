@@ -1,0 +1,26 @@
+
+main
+
+declarations
+{
+}
+
+program
+{
+  var count = 0;
+  var buffer = "";
+  var continue = 1;
+  while( integer.equal(continue,1) )
+  {
+    (count,buffer) = linux.read(0,30);
+    linux.write(1,buffer,count);
+    if( integer.equal(count,0) )
+    {
+      continue = 0;
+    }
+  }
+}
+
+functions
+{
+}
